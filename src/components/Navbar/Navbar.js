@@ -2,7 +2,9 @@ import React from 'react'
 
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+
 function Navbar() {
+    
     return (
         <>
 
@@ -25,13 +27,14 @@ function Navbar() {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/about">About Us</Link>
                             </li>
+                          
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <Link className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Login
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><Link className="dropdown-item" to="/login">Advisor</Link></li>
-                                    <li><Link className="dropdown-item" to="/">Client</Link></li>
+                                    <li><Link className="dropdown-item" to="/loginc">Client</Link></li>
                                     {/* <li><hr className="dropdown-divider"/></li> */}
 
                                 </ul>
