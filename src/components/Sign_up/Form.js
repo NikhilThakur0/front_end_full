@@ -1,5 +1,6 @@
 //import React from 'react'
-import  style from'../Sign_up/Form.module.css'
+import  '../Sign_up/Form.css'
+import  '../Sign_up/Form.module.css'
 import pic from './team.svg'
 import { useFormik } from 'formik';
 import { signUpSchema } from '../schemas/Helper.js';
@@ -54,13 +55,13 @@ function Form() {
                   </div> */}
                   <div className='form-row'>
                     <div className='col-lg-7'>
-                      <input type="text" name="Phone_no" placeholder='Phone No' className='form-control shadow-none my-3' value={Formik.values.Phone_no} onChange={Formik.handleChange} onBlur={Formik.handleBlur}></input>
+                      <input type="name" name="Phone_no" placeholder='Phone No' className='form-control shadow-none my-3' value={Formik.values.Phone_no} onChange={Formik.handleChange} onBlur={Formik.handleBlur}></input>
                       {Formik.errors.Phone_no&&Formik.touched.Phone_no?(<p className='Form-error'> {Formik.errors.Phone_no}</p>):null}
                     </div>
                   </div>
                   <div className='form-row'>
                     <div className='col-lg-7'>
-                      <input type="email" name="email" placeholder='Email' className='form-control shadow-none my-3' value={Formik.values.email} onChange={Formik.handleChange} onBlur={Formik.handleBlur}></input>
+                      <input type="email" name="email" placeholder='Email' className='form-control shadow-none my-3 signup-advisor-email' value={Formik.values.email} onChange={Formik.handleChange} onBlur={Formik.handleBlur}></input>
                       {Formik.errors.email&&Formik.touched.email?(<p className='Form-error'> {Formik.errors.email}</p>):null}
                     </div>
                   </div>
@@ -90,7 +91,7 @@ function Form() {
                   </div>
                   <div className='form-row'>
                     <div className='col-lg-7'>
-                    <button type="submit" className="btn btn-primary mt-3 mb-3 glow-on-hover">Sign Up</button>
+                    <button type="submit" className="btn btn-primary mt-3 mb-3  btn_sign">Sign Up</button>
                     
                     </div>
                   </div>

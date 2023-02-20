@@ -22,9 +22,9 @@ function Login() {
               <h1 className='font-weight-bold py-3'>Hey Advisor</h1>
               <h4>Sign Into Your Account</h4>
               <form className='needs-validation' novalidate>
-                <div className='form-row'>
-                  <div className='col-lg-6'>
-                    <input type="text" placeholder='Email' className=' form-control my-3 p-2' required></input>
+                <div className='form-row '>
+                  <div className='col-lg-7'>
+                    <input type="email" placeholder='Email' className=' form-control my-3 p-2 adv-eml' required></input>
                     <div className="invalid-feedback">
                       Please choose a username.
                     </div>
@@ -37,7 +37,7 @@ function Login() {
                 </div>
                 <div className='form-row'>
                   <div className='col-lg-7'>
-                    <button type="submit" className="btn btn-dark mt-3 mb-4">Login</button>
+                    <button type="submit" className="btn btn-dark mt-3 mb-4 logadv-btn">Login</button>
 
 
                   </div>

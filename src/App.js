@@ -10,8 +10,11 @@ import Services from './components/Services/Services';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import LoginClient from './components/LoginClient/LoginClient';
-// import Create from './components/dashboard/Create';
-// import GetInvestments from './components/dashboard/GetInvestments';
+import Create from './components/dashboard/Create';
+
+import Read from './components/dashboard/Read';
+import Update from './components/dashboard/Update'
+import UserInfo from './components/dashboard/UserInfo/UserInfo';
 
 
 function App() {
@@ -22,11 +25,18 @@ function App() {
   return (
     <>
       {/* <Create></Create>
-      <GetInvestments></GetInvestments> */}
+      <GetInvestments></GetInvestments>
+      <Read></Read>
+      <Update></Update> */}
 
 
-       <Navbar></Navbar>
-     <div style={footerStyle}>
+        
+{/* <UserInfo></UserInfo> */}
+
+
+
+       <Navbar></Navbar> 
+      <div style={footerStyle}> 
       <Routes>
       <Route exact path="/" element={<Home/>}>  </Route>
       <Route exact path="/services" element={<Services/>}>  </Route>
@@ -34,10 +44,17 @@ function App() {
         <Route exact path="/login" element={<Login/>}>  </Route>
         <Route exact path="/loginc" element={<LoginClient/>}>  </Route>
         <Route  exact path="/SignUp" element={<Sign_up/>}></Route>
-         {/* <Redirect></Redirect>  */}
+
+{/* <Route exact path="/" element={<Create/>}>  </Route>
+<Route exact path="/read" element={<Read/>}>  </Route>
+<Route exact path="/update" element={<Update/>}>  </Route> */}
+
+
+
+        
       </Routes> 
-      </div>
-      <Footer></Footer>
+      </div> 
+       <Footer></Footer> 
 
     
         

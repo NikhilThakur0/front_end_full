@@ -21,11 +21,12 @@ body{
     box-shadow: 12px 12px 22px gray;
 }
 
-.btn{
+.logadv-btn{
     height: 50px;
     width: 100%;
     background-color: #536dfe;
 }
+
 
 .btn:hover{
    background: white;
@@ -81,4 +82,11 @@ body{
 
 .img-fluid{
   height: 100%;
+}
+
+.adv-eml{
+  width: 100%;
+  box-sizing: border-box;
+  border:0px;
+  border-bottom: 2px solid #8EC5FC; 
 }

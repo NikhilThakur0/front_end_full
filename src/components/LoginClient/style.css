@@ -21,7 +21,7 @@ body{
     box-shadow: 12px 12px 22px gray;
 }
 
-.btn{
+.btncli{
     height: 50px;
     width: 100%;
     background-color: #536dfe;
@@ -81,4 +81,11 @@ body{
 
 .img-fluid{
   height: 100%;
+}
+.client-login-email
+{
+  width:100%;
+  box-sizing: border-box;
+  border:0px;
+  border-bottom: 2px solid #8EC5FC;
 }

@@ -15,7 +15,7 @@ function Login() {
           <div className='row py-5'>
             <div className='col-lg-6 '>
               <img src={pic}
-                className='img-fluid img m-lg-4' alt='image' />
+                className='img-fluid img m-lg-4' alt='tasveer' />
 
             </div>
             <div className='col-lg-6   px-5 pt-5'>
@@ -23,8 +23,8 @@ function Login() {
               <h4>Sign Into Your Account</h4>
               <form className='needs-validation' novalidate>
                 <div className='form-row'>
-                  <div className='col-lg-6'>
-                    <input type="text" placeholder='Email' className=' form-control my-3 p-2' required></input>
+                  <div className='col-lg-7'>
+                    <input type="email" placeholder='Email' className=' form-control my-3 p-2 client-login-email' required></input>
                     <div className="invalid-feedback">
                       Please choose a username.
                     </div>
@@ -37,7 +37,7 @@ function Login() {
                 </div>
                 <div className='form-row'>
                   <div className='col-lg-7'>
-                    <button type="submit" className="btn btn-dark mt-3 mb-4">Login</button>
+                    <button type="submit" className="btn btn-dark mt-3 mb-4 btncli">Login</button>
 
 
                   </div>

@@ -2,6 +2,7 @@ import React from 'react'
 
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import pic from '../Navbar/newIcon-removebg-preview (1).png'
 
 function Navbar() {
     
@@ -12,7 +13,8 @@ function Navbar() {
 
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="#">BackStreet</Link>
+                    {/* <Link className="navbar-brand" to="#">BackStreet</Link> */}
+                    <img src={pic} className="img-fluid img1" alt='logo'/>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
